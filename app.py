@@ -127,7 +127,7 @@ def save_ex():
 
 @app.route('/api/delete_ex', methods=['POST'])
 def delete_ex():
-    id = request.form.get('get')
+    id = request.form.get('id')
     word = request.form.get('word')
     db.examples.delete_one({'_id': ObjectId(id)})
     return jsonify({

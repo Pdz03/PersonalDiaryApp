@@ -124,7 +124,7 @@
                 let sentence = example.example;
                 temp_html += `
                 <li>${sentence}&nbsp;&nbsp;&nbsp;<a
-                      href="javascript:delete_ex(${id})">delete</a></li>
+                      href="javascript:delete_ex('${id}')">delete</a></li>
                 `
               }
               list.append(temp_html);
